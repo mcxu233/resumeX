@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+}
+ul ,ol{
+    list-style-type :none;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+    }
+
+h1,h2,h3,h4,h5,h6{
+        font-weight: normal;
+        font-size: inherit;
+    }
+
+.clearfix::after{
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: '.';
+}
+
+.top{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #d6d6d6;
+    padding: 15px 0;
+}
+
+.top-info{
+    max-width: 980px;
+    height: 40px;
+    position: relative;
+    margin: auto;
+}
+
+.info-logo{
+    position: relative;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+}
+
+.info-name{
+    font-size: 2.5em;
+    font-family: 'PingHei', 'STHeiti SC', 'SimHei';
+}
+
+.info-title{
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    line-height: 20px;
+    white-space: nowrap;
+    padding-left: 10px;
+    color: #888;
+}
+.info-adress{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 21px;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.info-adress li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding-left: 24px;
+}
+
+.adress-phone,.adress-qq,.adress-email{
+    background :url("../imgs/icon-sprites.png") no-repeat;
+    background-size:20px auto; 
+    margin-left: 28px;
+}
+.adress-qq{
+    background-position-y: -28px;
+}
+.adress-email{
+    background-position-y: -56px;
+}
+
+.button{
+    background: #08c;
+    color: white;
+    border-radius: 0.4em;
+    /* font-size: 12px; */
+    padding: 0 0.6em;
+}
+
+
+
+
+
+
