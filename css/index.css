@@ -105,66 +105,76 @@ h1,h2,h3,h4,h5,h6{
     padding: 0 0.6em;
 }
 
-.page1{
-    background-color: #4dd0e1;
-}
-.page2{
-    background: #22c3aa;
+.section:nth-child(even){
+    background: #FAFAFA;
 }
 
 .section{
     position: relative;
 }
 
-.contain{
+page{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.content{
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.header-title{
+    font-size: 40px;
+}
+
+.page-header{
+    margin-bottom: 30px;
+}
+
+.header-subtitle{
+    font-size: 34px;
+    color: #999;
+}
+
+.header-title,.header-subtitle{
+    font-family: 'Microsoft JhengHei', 'Microsoft YaHei', 'STHeiti SC', 'SimHei';
     text-align: center;
 }
-.page1 .myname{
-    font-size: 2em;
-    letter-spacing: 2px;
-    text-shadow: 1px 2px #4dd0e1, 2px 3px #2caaba;
-    color: #fff;
-    margin: 0.6em;
+
+.person-info{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
 }
 
-.subtitle{
-    font-size: 1.1em;
-    margin: .5em 0 .25em;
-    color: #bcf1f8;
-}
-
-.page1 h5{
-    margin: 12px 0 24px;
-    font-size: 22px;
-    color: #fff;
-}
-
-.page1 img{
-    border: 10px solid #36b5c5;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
+.avatar img{
     border-radius: 50%;
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,.19);
-    height: 13em;
+    width: 10em;
 }
 
-.page2 h3{
-    font-size: 2em;
-    color: #fff;
+.avatar{
+    padding-right: 4%;
+    text-align: right;
 }
+
+.detial{
+    padding-left: 4%;
+    border-left: 2px dashed #ccc;
+}
+
 
 .page2 ul{
     margin: auto;
     width: 70%;
-    padding-top: 2em;
 }
+
 .page2 li{
     margin-bottom: 20px;
     animation-name: bar-javascript;
     position: relative;
     animation-duration: 1.5s;
 }
+
 .page2 h4{
     color: #2a7da9;
     height: 40px;
@@ -175,8 +185,14 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1.2em;
 }
 
-.page2 .li-js{
+.page2 .li-js,.li-jquery,.li-sql{
     border-left: 3px solid #3498db;
+    background-color: #d6efff;
+    width: 70%;
+}
+
+.page2 .li-html,.li-c{
+    border-left: 3px solid #80bd01;
     background-color: #d6efff;
     width: 70%;
 }
