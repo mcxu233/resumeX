@@ -3,7 +3,15 @@
     padding: 0;
 }
 body{
+    margin: 0;
+    background: #fff;
+    line-height: 1;
+    font-family: 'Pingfang SC', 'Lantinghei SC', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-print-color-adjust: exact;
 }
 ul ,ol{
     list-style-type :none;
@@ -113,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
 }
 
-page{
+.page{
     max-width: 980px;
     margin: 0 auto;
 }
@@ -162,12 +170,6 @@ page{
     border-left: 2px dashed #ccc;
 }
 
-
-.page2 ul{
-    margin: auto;
-    width: 70%;
-}
-
 .page2 li{
     margin-bottom: 20px;
     animation-name: bar-javascript;
@@ -176,7 +178,6 @@ page{
 }
 
 .page2 h4{
-    color: #2a7da9;
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
@@ -185,19 +186,82 @@ page{
     font-size: 1.2em;
 }
 
-.page2 .li-js,.li-jquery,.li-sql{
+.page2 .li-js,.li-c,.li-sql{
     border-left: 3px solid #3498db;
     background-color: #d6efff;
-    width: 70%;
+    color: #2a7da9;
 }
 
-.page2 .li-html,.li-c{
+.page2 .li-html,.li-jquery{
     border-left: 3px solid #80bd01;
-    background-color: #d6efff;
-    width: 70%;
+    background-color: #EAF6D0;
+    color: #6e9c0f;
 }
 
+.li-js{
+    width: 100%;
+}
+.li-jquery{
+    width: 85%;
+}
+.li-html{
+    width: 65%;
+}
+.li-c{
+    width: 75%;
+}
+.li-sql{
+    width: 50%;
+}
 
+.skill-detail{
+    position: absolute;
+    right: 35%;
+    top: 12px;
+    z-index: 9999;
+    max-width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+}
+
+.skill-detail ul{
+    width: auto;
+}
+
+.skill-detail li{
+    list-style-type: disc;
+    margin:0 1.3em;
+    font-size: 0.8em;
+    color: black;
+}
+
+.work-list{
+    padding: 1px 0;
+    margin-left: 8px;
+    border-left: 4px solid #ccc;
+}
+
+.work-item{
+    position: relative;
+    padding-left: 15px;
+    margin: 15px 0;
+    height: 26px;
+    line-height: 26px;
+}
+
+.work-mark{
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    background: #3498db;
+}
 
 
 
