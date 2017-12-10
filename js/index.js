@@ -4,6 +4,6 @@ $(function () {
     });
 
     $(".skill-list").hover(function () {
-        $(this).find(".skill-detail").fadeToggle(200);
+        $(this).find(".skill-detial").fadeToggle(200);
     });
 });
