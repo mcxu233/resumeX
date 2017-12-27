@@ -1,5 +1,5 @@
 $(function () {
-    $('#dowebok').fullpage({
+    $('#main').fullpage({
         autoScrolling: false
     });
 
